@@ -28,3 +28,6 @@ const UserSchema = new Schema({
         min: 18
     },
 },{timestamps: true});
+
+const user = mongoose.model('User' , UserSchema)
+module.exports = user;
